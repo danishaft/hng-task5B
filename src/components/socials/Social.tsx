@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+
 import styles from './Social.module.scss'
 interface Social {
     url:  string,
