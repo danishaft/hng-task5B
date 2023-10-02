@@ -1,0 +1,74 @@
+@use "../../assets/styles/styles.scss" as g;
+header{
+    padding: .4em 0;
+    -webkit-box-shadow: 0px 0px 22px -7px rgba(114, 116, 130, 1);
+-moz-box-shadow: 0px 0px 22px -7px rgba(114, 116, 130, 1);
+box-shadow: 0px 0px 22px -7px rgba(114, 116, 130, 1);
+margin-bottom: 3em;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 70em;
+    padding: 0 4%;
+    margin: 0 auto;
+    // border: 1px solid red;
+}
+.first{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    color: #000;
+    @include g.text-header;
+    display: none;
+}
+
+.profile__mb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include g.text-header;
+    font-weight: bold;
+}
+.profile__mb img{
+    width: 1.8em;
+}
+.profile__mb p{
+    @include g.text-sm;
+    margin: 0 .5em;
+    font-weight: lighter;
+}
+
+//responsive breakpoints
+@include g.tablet{
+    .hambuger{
+        display: none;
+    }
+    .links{
+        display: flex;
+    }
+    .heading{
+        max-width: 70em;
+        padding: 0 7%;
+        margin: 0 auto;
+    }
+}
+
+@include g.desktop{
+    .heading{
+        max-width: 75em;
+        padding: 0;
+    }
+    .profile__bg{
+        display: flex;
+    }
+}

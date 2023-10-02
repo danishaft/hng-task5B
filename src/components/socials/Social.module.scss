@@ -1,0 +1,15 @@
+@use '../../assets/styles/styles.scss' as g;
+
+.social{
+    border: .1em solid g.$primary-900;
+    @include g.manrope;
+    @include g.text-header;
+    display: flex;
+    gap: .4em;
+    text-decoration: none;
+    border-radius: .3em;
+    font-weight: 700;
+    color: g.$primary-900;
+    padding: .5em .6em;
+    @include g.flex-r;
+}

@@ -1,0 +1,88 @@
+@use '../../assets/styles/styles.scss' as g;
+.auth{
+    width: 100%;
+    max-width: 85em;
+    padding: 0 6%;
+    margin: 0 auto;
+}
+.auth .logo{
+    padding: 2em 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.auth .main__auth{
+    text-align: center;
+    width: 100%;
+    max-width: 23em;
+    margin: 0 auto
+}
+.auth .main__auth h2{
+    @include g.manrope;
+    font-weight: bold;
+    @include g.text-max;
+    color: g.$primary-black
+}
+.auth .main__auth p{
+    @include g.text-sm;
+    color: #434343;
+    margin-bottom: 1.7em;
+}
+.main__auth .btn{
+    border: .05em solid g.$primary-black;
+    margin: 1.4em 0;
+    color: g.$primary-black;
+    border-radius: .7em;
+    @include g.text-sm;
+    padding: .5em 0;
+    font-weight: 500;
+    @include g.flex-r;
+    gap: .8em;
+    cursor: pointer;
+}
+.main__auth .btn img{
+    width: 1.4em;
+}
+.main__auth  .divider{
+    color: #B9C2C8;
+    @include g.flex-r;
+    gap: 1em;
+    margin-bottom: .8em;
+}
+.main__auth  .divider .lines{
+    width: 100%;
+    height: 1px;
+    background: #B9C2C8;
+    border: 1px solid #B9C2C8;
+}
+.input{
+    @include g.flex-c;
+    align-items: flex-start;
+    // border: 1px solid red;
+}
+.input .field{
+    width: 100%;
+    padding: .5em 1em;
+    border-radius: .7em;
+    border: .05em solid g.$primary-100;
+    color: #626262;
+    font-weight: 400;
+    @include g.text-sm;
+    margin: .3em 0 .5em 0;
+}
+.input label{
+    color: g.$primary-black;
+    font-weight: 500;
+    @include g.text-sm;
+}
+.signup__btn{
+    width: 100%;
+    background: g.$primaryMain ;
+    margin: 1.4em 0;
+    color: #ffff;
+    border-radius: .7em;
+    @include g.text-sm;
+    padding: .5em 0;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}

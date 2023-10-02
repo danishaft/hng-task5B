@@ -1,0 +1,31 @@
+@use '../../assets/styles/styles.scss' as g;
+
+.hero{
+    @include g.flex-c;
+    gap: 3em;
+}
+.hero__text h1{
+    @include g.sora;
+    @include g.text-max1;
+    color: g.$primary-black;
+    margin-bottom: .15em;
+}
+.hero__text > p{
+    color: rgba(0, 0, 0, 0.75);
+    @include g.text-base;
+    @include g.manrope;
+    margin-bottom: 2em;
+}
+
+//responsiveness
+@include g.desktop{
+    .hero{
+        @include g.flex-r;
+        flex-direction: row;
+    }
+    .hero__text{
+        width: 50%;
+        gap: 0;
+        // border: 1px solid red;
+    }
+}

@@ -1,0 +1,27 @@
+@use '../../assets/styles/styles.scss' as g;
+.card{
+    border: 1px solid rgba(182, 179, 198, 0.6);
+    border-radius: 1em;
+    padding: 1em;
+}
+.card img{
+    width: 100%;
+}
+.card figcaption{
+    margin: .8em 0 0 .5em;
+}
+.card figcaption .top{
+    @include g.flex-r;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+.top h3{
+    margin-right: auto;
+    @include g.text-header;
+    font-weight: bold;
+}
+.card figcaption p{
+    color: g.$primary-100;
+    @include g.text-sm;
+}

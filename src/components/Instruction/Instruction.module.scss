@@ -1,0 +1,18 @@
+@use '../../assets/styles/styles.scss' as g;
+.instruction{
+    @include g.flex-c;
+    align-items: center;
+    text-align: center;
+    gap: 1.3em;
+    // width: 100%;
+    // max-width: 20em;
+}
+.instruction .middle h3{
+    @include g.text-bg;
+    color: #1B233D;
+    margin-bottom: .3em;
+}
+.instruction .middle p{
+    color: g.$primary-grey;
+    @include g.text-base
+}

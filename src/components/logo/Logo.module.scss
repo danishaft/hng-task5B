@@ -1,0 +1,13 @@
+@use "../../assets/styles/styles.scss" as g;
+
+.logo__bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4em;
+    margin: .7em 0;
+}
+.logo__bg h1 {
+    @include g.text-header;
+    font-weight: bold;
+}

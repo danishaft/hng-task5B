@@ -1,0 +1,60 @@
+@use '../../assets/styles/styles.scss' as g;
+.video__container{
+    width: 100%;
+    max-width: 70em;
+    padding: 0 4%;
+    margin: 1em auto;
+}
+.video__details .share__name >*{
+    margin: 1.2em 0;
+}
+.video__details .inputs{
+    @include g.flex-r;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+    margin-top: 1.4em;
+}
+.video__details .inputs >*{
+    margin: 0;
+    margin-bottom: 0;
+    justify-self: flex-start;
+    // border: 1px solid red;
+}
+.socials .socials__title{
+    @include g.text-header;
+    font-weight: bold;
+    color: g.$primary-900;
+    margin-bottom: .5em;
+}
+.socials .socials__list{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.transcribe{
+    margin: 2.5em 0;
+}
+.transcribe h3 {
+    color: #000;
+    margin-bottom: .4em;
+    @include g.text-base;
+    @include g.sora;
+
+}
+.transcribe select {
+    color: #9D9D9D;
+    @include g.text-sm;
+    border-radius: .3em;
+    padding: .2em;
+    margin-bottom: 2em;
+}
+.transcribe .transcript{
+    display: flex;
+    gap: 1em;
+    color: #000;
+    @include g.text-sm;
+    margin-bottom: 1em;
+}

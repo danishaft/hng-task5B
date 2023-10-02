@@ -1,0 +1,72 @@
+@use '../../assets/styles/styles.scss' as g;
+.highlights__sec{
+    margin: 10em 0;
+    width: 100%;
+}
+.highlights__title{
+    // border: 1px solid red;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.highlights__title h2{
+    @include g.sora;
+    @include g.text-max;
+    color: g.$primary-black;
+}
+.highlights__title p{
+    // @include g.manrope;
+    color: #616163;
+    @include g.text-base;
+}
+.highlights .point{
+    @include g.flex-r;
+    align-items: flex-start;
+    gap: 1em;
+    margin: 2em 0;
+}
+.highlights .point__text h4{
+    @include g.text-bg;
+    padding: 0;
+    margin-bottom: .35em;
+    line-height: 1;
+}
+.highlights .point__text p{
+    @include g.text-base;
+    color: g.$primary-black;
+    line-height: 1.3;
+}
+.highlights{
+    @include g.flex-c;
+    gap: 2em;
+}
+.highlights .img{
+    // border: 1px solid red;
+    border-radius: 1em 1em 0 0;
+    // background-image: url('https://www.npmjs.com/~mmcc') no-repeat cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+//responsiveness
+
+@include g.desktop{
+    .highlights{
+        // @include g.flex-r;
+        flex-direction: row;
+        align-items: center;
+    }
+    .highlights .points__list{
+        width: 50%;
+        // border: 1px solid red;
+        padding: 2em 0;
+    }
+    .highlights .img{
+        width: 50%;
+        // aspect-ratio: 1/.8;
+    }
+}
+@include g.monitor{
+    .highlights .img{
+        aspect-ratio: 1/.8;
+    }
+}

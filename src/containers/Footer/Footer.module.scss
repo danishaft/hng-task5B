@@ -1,0 +1,54 @@
+@use "../../assets/styles/styles.scss" as g;
+footer {
+    background:  g.$primaryMain;
+    color: #ffff;
+    margin-top: 3em;
+}
+.footer{
+    width: 100%;
+    max-width: 70em;
+    padding: 2em 6%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+}
+nav .footer__links p{
+    margin-bottom: .5em;
+}
+nav .footer__links .lists{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include g.text-header;
+    gap: .5em;
+}
+
+//responsive breakpoints
+@include g.tablet{
+    .footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    nav {
+        flex-direction:row ;
+        justify-content: space-between;
+        gap: 3em;
+    }
+}
+
+@include g.desktop{
+    nav {
+        gap: 5em;
+    }
+}

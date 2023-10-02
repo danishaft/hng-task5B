@@ -1,0 +1,86 @@
+@use '../../assets/styles/styles.scss' as g;
+.video__repo{
+    @include g.flex-r;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 70em;
+    padding: 0 4%;
+    margin: 1em auto;
+    // border: 1px solid red;
+    gap: 1em;
+}
+.video__repo .title h2{
+    @include g.text-bg1;
+    color: g.$primary-black;
+    @include g.sora;
+    line-height: 1.2;
+}
+.video__repo .title p{
+    color: rgba(20, 20, 20, 0.7);
+    @include g.text-base;
+}
+.video__repo .search{
+    // border: 1px solid red;
+    // width: 100%;
+    border-radius: 1em;
+}
+
+.input{
+    display: grid;
+    place-content: center;
+    background: rgba(182, 179, 198, 0.14);
+    color: rgba(195, 195, 195, 1);
+    border-radius: .5em;
+}
+.input >*{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.input .icon{
+    z-index: 1;
+    align-self: center;
+    margin-left: .5em;
+}
+.input .field{
+    padding: .9em 2.3em ;
+    width: 100%;
+    width: 30em;
+    border: none;
+  color: #C3C3C3;
+    background: rgba(182, 179, 198, 0.14);
+    border-radius: .5em;
+    @include g.text-sm;
+}
+.repo__sec{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.repo__sec .repo__div{
+    width: 100%;
+    max-width: 70em;
+    padding: 0 4%;
+    margin: 1.5em auto;
+}
+.repo__div h3{
+    color: g.$primary-black;
+    @include g.text-header;
+    font-weight: 500;
+}
+.repo__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(25em, 100%), 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin: 1em 0;
+}
+
+//reesponsive
+
+@include g.desktop{
+    .video__repo {
+        @include g.flex-r;
+        justify-content: space-between;
+    }
+}
