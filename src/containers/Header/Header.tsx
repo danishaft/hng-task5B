@@ -35,7 +35,7 @@ const Header = () => {
                     <><img src={profile}  alt="john mark" /><p>John mark</p><BsChevronDown /></>
                     : 
                     <Link to='/signup'>
-                        Get Started
+                        Get Started.
                     </Link>
                 }
             </div>
