@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import Logo from "../../components/logo/Logo";
-import styles from "./Header.module.scss"
+import styles from "./header.module.scss"
 import { Squash as Hamburger } from 'hamburger-react'
 import { useState } from "react";
 import { useAuth } from "../../context/AuthContext"
